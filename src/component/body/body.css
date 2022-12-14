@@ -5,8 +5,39 @@
     background: black;
     color: white;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .product-wrapper{
     display:  grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1600px) {
+    .product-wrapper{
+        display:  grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } 
+}
+@media screen and (max-width: 1250px) {
+    .product-wrapper{
+        display:  grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+}@media screen and (max-width: 1000px) {
+    .product-wrapper{
+        display:  grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+}@media screen and (max-width: 650px) {
+    .product-wrapper{
+        display:  grid;
+        grid-template-columns: 1fr;
+    } 
+}
+.body .add-wrapper button{
+    width: 100%;
+    margin-bottom: 10px;
+    background: rebeccapurple;
+    color: beige;
 }
